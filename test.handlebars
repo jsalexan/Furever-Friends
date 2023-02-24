@@ -1,0 +1,12 @@
+      <nav class="navbar row navbar-expand-m navbar-custom sticky-top justify-content-start px-5">
+      <!-- Conditionally render login or logout links -->
+      {{#if logged_in}}
+     <img class="title" src="https://user-images.githubusercontent.com/110498167/221051566-95de31e2-be44-4d56-86c6-c6ed5829b03a.png">
+      <a href="/profile" class="btn btn-secondary col-2 mx-1">My Profile</a>
+      <a href="/post" class="btn btn-secondary col-2 mx-1">Lickin Post</a>
+      <a href="/" class="btn btn-secondary col-2 mx-1" id="logout">Logout</a>
+      {{else}}
+      <img class="title" src="https://user-images.githubusercontent.com/110498167/221051566-95de31e2-be44-4d56-86c6-c6ed5829b03a.png">
+      {{!-- <a href="/" class="btn btn-secondary col-2 mx-2">Login</a> --}}
+      {{/if}}
+    </nav>

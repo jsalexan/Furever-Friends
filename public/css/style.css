@@ -4,10 +4,12 @@
     --cyan: #4CD7D0;
     --dark-yellow: #E1C340;
     --dogfont: Verdana, Geneva, Tahoma, sans-serif;
+    --text: #32495b;
 }
 
 * {
     font-family: 'Poppins', sans-serif;
+    color: var(--text);
 }
 
 .navbar-custom {
@@ -25,15 +27,38 @@ a {
     text-shadow: var(--yellow);
     font-family: var(--dogfont);
 }
+ .title {
+    margin-left: 10px;
+    max-width: 350px;
+    min-width: 250px;
+ }
+
+ img.title {
+    max-width: 280px;
+    min-width: 250px;
+    justify-content: center;
+ }
+
+ #create-h2 {
+    text-align: center;
+ }
 
 .bg-image {
     background-image: url('../image/dogs.jpg');
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 100vh; 
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    position: relative;
+    position: relative; 
+}
+ .nav-links {
+    font-size: 20px;
+    color: var(--text);
+
+ }
+.ct-ac-btn {
+    margin-left: 0;
 }
 
 #login-card,
@@ -45,16 +70,19 @@ a {
     border-color: var(--cyan);
 }
 
+placeholder {
+    font-size: 14px;
+}
 
 .btn-primary {
     font-style: bolder;
     background-color: var(--cyan);
-    color: black;
+    color: var(--text);
 }
 
 .btn-primary:hover {
     background-color: var(--dark-yellow);
-    color: black;
+    color: var(--text);
 }
 
 .btn-secondary {
@@ -70,6 +98,11 @@ a {
     background-color: var(--dark-yellow);
     color: white;
 }
+#logo {
+    border-style: groove;
+    border-color: var(--cyan);
+    border-radius: 6px;
+}
 
 .card {
     background-color: var(--light-blue);
@@ -79,6 +112,11 @@ footer {
     color: --cyan;
     background-color: var(--yellow);
     font-size: .625rem;
+}
+
+.form-input{
+    height: 40px;
+    background-color: aliceblue;
 }
 
 .justify-content-center {
@@ -157,7 +195,7 @@ textarea {
 }
 
 .log-dog {
-    border-color: black;
+    border-color: var(--text);
     border-style: groove;
 }
 
@@ -167,6 +205,15 @@ textarea {
 
 .img-responsive {
     width: 50%;
+}
+
+.avatar-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
 }
 
 .profile-container {
@@ -265,7 +312,7 @@ label {
 
 .deletebtn:hover {
     background-color: var(--dark-yellow);
-    color: black;
+    color: var(--text);
 }
 
 #post-content {
@@ -357,4 +404,11 @@ mainphotoz {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+}
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    navbar{
+        justify-content: center !important;
+    }
 }
