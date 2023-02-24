@@ -1,5 +1,5 @@
 <div class="row" id="new-post">
-  <div class="card mx-auto col-sm-10 col-md-8 col-lg-6 my-5 py-3 text-center">
+  <div class="card mx-auto col-sm-10 col-md-8 col-lg-6 my-5 py-3 text-center shadow-sm">
     <h3 class="create-post-title">Create a new post:</h3>
     <form class="form new-post-form" enctype="multipart/form-data">
       <div class="form-group row justify-content-center">
@@ -7,8 +7,8 @@
           name="title" />
       </div>
       <div class="form-group row mt-3 justify-content-center">
-         <textarea class="form-input col-8 post-input-title" rows="6" placeholder="Your message..." id="post-body"
-          name="body"></textarea>
+         <textarea class="form-input col-8 post-input-title pt-3" rows="6" placeholder="Your message..." id="post-body" style="height: 100px"
+          name="body" ></textarea>
       </div>
       <label class="mt-3 " for="image">Upload a Picture: </label>
       <div class="form-group mt-3 ml-8" id="uploadbtn">
@@ -25,7 +25,7 @@
 <!-- Loop over each object in the posts -->
 {{#each posts as |post|}}
 <div class="overflow-auto post-listz">
-  <div class="row card col-sm-11 col-md-9 col-lg-8 mx-auto my-2">
+  <div class="row card col-sm-11 col-md-9 col-lg-8 mx-auto my-2 shadow">
     <div class="col-sml-8 posts">
       <div id="post-head">
         <div id="namerz">

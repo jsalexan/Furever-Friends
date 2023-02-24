@@ -28,14 +28,14 @@ a {
     font-family: var(--dogfont);
 }
  .title {
-    margin-left: 10px;
+    margin-left: 5px;
     max-width: 350px;
-    min-width: 250px;
+    min-width: 230px;
  }
 
  img.title {
     max-width: 280px;
-    min-width: 250px;
+    min-width: 230px;
     justify-content: center;
  }
 
@@ -146,9 +146,13 @@ textarea {
 }
 
 .create-post-title {
-    color: var(--text);
+    color: #019090;
+    margin-bottom: 20px;
 }
 
+.create-btn {
+    margin-top: 15px;
+}
 
 #comment-btn {
     width: 100px;
@@ -307,7 +311,7 @@ label {
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
-    margin-right: 50px;
+    margin-right: 3%;
 }
 
 .input-label {
@@ -318,6 +322,7 @@ label {
     height: 50px;
     border-radius: 4px;
     background-color: whitesmoke;
+    text-align: start;
 }
 
 #namerz {
@@ -366,6 +371,7 @@ a {
     align-self: flex-end;
     font-size: 14px;
     padding-bottom: 16px;
+    color: rgb(1, 144, 144);
 }
 
 textarea {
