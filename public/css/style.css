@@ -3,7 +3,7 @@
     --light-blue: #A4E8E0;
     --cyan: #4CD7D0;
     --dark-yellow: #E1C340;
-    --dogfont: Verdana, Geneva, Tahoma, sans-serif;
+    --dogfont: 'Poppins', sans-serif;
     --text: #32495b;
 }
 
@@ -131,16 +131,27 @@ footer {
 }
 
 .file-upload-button {
-    background-color: #4CD7D0;
+    background-color: #4CD7D0 !important;
+}
+input#image {
+    padding-left: 75px;
 }
 
+input#file-upload-button {
+    background-color: var(--cyan);
+}
 textarea {
     width: 80%;
     height: 100px;
 }
 
+.create-post-title {
+    color: var(--text);
+}
+
+
 #comment-btn {
-    /* width: 30rem; */
+    width: 100px;
     background-color: #4CD7D0;
     border-radius: 0.375rem;
     /* margin-bottom: 20px; */
@@ -167,6 +178,11 @@ textarea {
     width: 80%;
     height: 100px;
     margin-bottom: 5px;
+}
+
+.add-bark {
+    margin-bottom: 0px;
+    padding: 10px;
 }
 
 .single-post-container {
@@ -240,6 +256,10 @@ textarea {
     margin-top: 6px;
 }
 
+.view-profile{
+    padding: 40px;
+}
+
 .info-block {
     font-size: 1.2rem;
 }
@@ -287,11 +307,14 @@ label {
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
-
+    margin-right: 50px;
 }
 
+.input-label {
+    min-width:95px; 
+}
 .post-input-title {
-    width: 100%;
+    width: 70%;
     height: 50px;
     border-radius: 4px;
     background-color: whitesmoke;
@@ -329,7 +352,7 @@ label {
 
 #commentz {
     display: flex;
-    flex-direction: column;
+    align-self: flex-end;
     font-size: 14px;
 }
 
@@ -341,7 +364,8 @@ a {
 #footerz {
     display: flex;
     align-self: flex-end;
-    font-size: 12px;
+    font-size: 14px;
+    padding-bottom: 16px;
 }
 
 textarea {
@@ -408,7 +432,7 @@ mainphotoz {
 
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
-    navbar{
+    nav{
         justify-content: center !important;
     }
 }
