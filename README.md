@@ -50,23 +50,27 @@ The application (link above) was created to be used on the following devices:
 
 ### Homepage
 
-![Homepage](./public/image%202/Login%20Page.png)
+![Homepage](https://user-images.githubusercontent.com/110498167/225440046-d184a44c-0541-42e7-a987-005875439047.png)
 
 ### Create Profile
 
-![Create Profile](./public/image%202/Create%20Profile.png)
+![Create Profile](https://user-images.githubusercontent.com/110498167/225440121-75a3bf71-9987-4c04-be62-4fdf5382d672.png)
 
 ### Create Post
 
-![Create Post](./public/image%202/Create%20Post.png)
+![Create Post](https://user-images.githubusercontent.com/110498167/225442063-9b478b90-cac5-43f0-bd35-f3d7895a939b.png)
+
+### Post Feed
+
+![Post Feed](https://user-images.githubusercontent.com/110498167/225440545-d67122fd-a1be-4ebf-a096-9934799e1b72.png)
 
 ### View Single Post
 
-![View Single Post](./public/image%202/Single%20Post.png)
+![View Single Post](https://user-images.githubusercontent.com/110498167/225441802-953f7534-e7d7-4d3b-a805-12a30559843f.png)
 
 ### View Profile
 
-![View Profile](./public/image%202/View%20Profile.png)
+![View Profile](https://user-images.githubusercontent.com/110498167/225440150-b2037760-982d-49c0-912e-126a855a23af.png)
 
 <br>
 
