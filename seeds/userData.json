@@ -2,16 +2,19 @@
     {
       "name": "Jeremy",
       "email": "jerm@hotmail.com",
-      "password": "password123"
+      "password": "password123",
+      "avatar": "optionEight"
     },
     {
       "name": "Lesley",
       "email": "weasels@gmail.com",
-      "password": "password2345"
+      "password": "password2345",
+      "avatar": "optionTwo"
     },
     {
       "name": "Sy",
       "email": "imsoold@aol.com",
-      "password": "password5"
+      "password": "password5",
+      "avatar": "optionSix"
     }
   ]
