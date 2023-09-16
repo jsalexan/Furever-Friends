@@ -435,10 +435,3 @@ mainphotoz {
     justify-content: center;
     margin-left: 10px;
 }
-
-/* If the screen size is 601px or more, set the font-size of <div> to 80px */
-@media only screen and (min-width: 601px) {
-    nav{
-        justify-content: center !important;
-    }
-}

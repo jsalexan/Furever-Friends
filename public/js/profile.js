@@ -13,35 +13,35 @@ const newFormHandler = async (event) => {
   switch (avatar) {
     case "optionOne":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814666/dog2_cwiskm.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848816/fb4i2lvxy9broboiwxgt.png";
       break;
     case "optionTwo":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814666/dog3_ad2syv.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848825/p1hkg5okpewqwgrkbb51.png";
       break;
     case "optionThree":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814665/dog4_u4kbfh.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848834/scmucgc2vxqyxo2tqizx.png";
       break;
     case "optionFour":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814662/dog11_qofpmb.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848849/wlvagpfrxvwwpivavd7c.png";
       break;
     case "optionFive":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814664/dog6_edn6fq.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848858/i9pxpxfsvhdykjidpemo.png";
       break;
     case "optionSix":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814663/dog9_uu5flo.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848868/znsrbq2xtinelrg977iy.png";
       break;
     case "optionSeven":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814663/dog8_uh9xlw.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848877/uvfuseyhhwt0dap0akf9.png";
       break;
     case "optionEight":
       avatar =
-        "https://res.cloudinary.com/dlxjksvbc/image/upload/v1694814662/dog12_bbhlea.png";
+        "https://res.cloudinary.com/dtah7hwfr/image/upload/v1669848884/scpvsdm1budrhgulk4ew.png";
       break;
   }
 
