@@ -4,7 +4,7 @@
             <div id="post-head">
                 <div id="namerz">
                     <a href="/profile/{{post.user.id}}" id="viewProfile">
-                        <img src="{{post.user.profile.avatar}}" height="50px" width="50px" style="border-radius:10px">
+                        <img class="one-avatar" src="{{post.user.profile.avatar}}" height="50px" width="50px" style="border-radius:10px">
                     </a>
                     <a href="/profile/{{post.user.id}}" id="viewProfile">{{post.user.name}} </a>
                 </div>
@@ -26,15 +26,17 @@
                 <div id="footerz"> {{format_date post.date_created}}</div>
             </div>
         </div>
+        <div class="justify-content-center" id="content-cont">
         <form class="comment-form justify-content-center row">
             <div class="input-field add-bark">
-                <textarea type="text" id="comment" placeholder="Explain your bark"></textarea>
+                <textarea type="text" id="comment" placeholder="What would you like to bark about?"></textarea>
             </div>
             <input type="hidden" name="post-id" value="{{post.id}}">
             <button type="submit" id="comment-btn">Add Bark</button>
         </form>
+        </div>
         <div id="#comments">
-            {{> comments post.comments}}
+            {{> comments post.comments }}
         </div>
     </div>
 </div>
