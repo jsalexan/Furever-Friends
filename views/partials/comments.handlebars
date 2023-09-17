@@ -1,8 +1,5 @@
 {{#each this}}
 <div class="comments card mx-auto col-sm-10 my-3 py-1 text-center">
-  <!-- Debugging output -->
-  {{log this}}
-  
   <section class="comment">
     <div class="meta">
       <div id="post-head-commentz">
@@ -15,9 +12,7 @@
         <div class="text text-commentz">
           {{comment_body}}
         </div>
-        <!-- Debugging output for dateCreated -->
-        {{log comment.dateCreated}}
-        <p id="comment-card-date">{{dateCreated}}</p>
+        {{!-- <p id="comment-card-date">{{comment.dateCreated}}</p> --}}
       </div>
     </div>
   </section>

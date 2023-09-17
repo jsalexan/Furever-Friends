@@ -1,19 +1,30 @@
     :root {
-        --highlight: #FFA500;        /* Vibrant Red */
-        --background-light: #6CC3D5; /* Light Blue */
+        --highlight: #C35548;        /* Red */
+        --background-light: #2AAEE4; /*  Blue */
         --main-color: #ffffff;       /* White */
-        --accent: #FFA500;           /* Orange */
-        --text: #1E2A38;             /* Dark Gray */
+        --accent: #FE9746;           /* Orange */
+        --text: #0E3B51;             /* Dark Gray */
+        --pop: #91AC2D;             /* Green */
+        --pop2: #FFD657;                 /* Yellow */
         --dogfont: 'Poppins', sans-serif;
     }
     
 * {
+    --bs-body-font-family: 'Poppins', sans-serif;
+    color: var(--text);
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     color: var(--text);
 }
 
-.navbar-custom {
-    background-color: var(-background-light);
+.navbar-custom.navbar-light{
+    background-color: var(--background-light) !important;
+}
+
+span.navbar-toggler-icon {
+    color: var(--pop2) !important;
 }
 
 a {
@@ -49,7 +60,7 @@ a:hover {
  }
 
 .bg-image {
-    background-image: url('../image/dogs.jpg');
+    background-image: url('../image/FF-background.png');
     background-attachment: fixed;
     min-height: 100vh; 
     background-position: center;
@@ -57,11 +68,18 @@ a:hover {
     background-repeat: repeat;
     position: relative; 
 }
+
  .nav-links {
     font-size: 20px;
-    color: var(--text);
-
+    color: var(--pop2);
+    transition: font-size 0.3s ease; 
  }
+
+ .nav-links:hover {
+    font-size: 21px;
+    color: #F4B664;
+ }
+
 .ct-ac-btn {
     margin-left: 0;
 }
@@ -69,6 +87,7 @@ a:hover {
 #login-card,
 #createac-card {
     background-color: var(--background-light);
+    border-color: #F4B664 !important;
 }
 
 .border-custom {
