@@ -8,7 +8,7 @@ User.hasMany(Post, {
   onDelete: 'CASCADE'
 }),
 
-User.hasOne(Profile, {
+User.hasMany(Profile, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 }),
