@@ -20,6 +20,17 @@ const newFormHandler = async (event) => {
   }
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const createPostBar = document.querySelector(".create-post-bar");
+  const createPostForm = document.querySelector(".create-post-form");
+  const createPostToggle = document.querySelector(".create-post-toggle");
+
+  createPostBar.addEventListener("click", function () {
+    // Toggle the visibility of the form when clicking the "+"
+    createPostForm.style.display = createPostForm.style.display === "none" ? "block" : "none";
+  });
+});
+
 const deleteBtnHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');

@@ -261,9 +261,22 @@ textarea {
     gap: 30px;
 
 }
+
 img.one-avatar {
     border-radius: 6px;
+    transition: transform 0.3s ease;
 }
+
+img.one-avatar:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+img.one-avatar:not(:hover) {
+    transform: scale(1);
+    z-index: 0;
+  }
+
 
 .profile-container {
     display: flex;
@@ -303,6 +316,27 @@ img.one-avatar {
 .title {
     text-align: center;
 }
+
+.create-post-bar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .create-post-toggle {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .create-post-form {
+    display: none;
+  }
 
 #post-head {
     display: flex;
