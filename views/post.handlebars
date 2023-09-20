@@ -1,12 +1,15 @@
 <div class="create-post-bar">
   <span class="create-post-text">Create New Post</span>
-  <button class="create-post-toggle">+</button>
+  <button class="create-post-toggle"><i class="fa-duotone fa-message-plus fa-beat fa-2xs" style="--fa-primary-color: #2aaee4; --fa-secondary-color: #ffd657; --fa-secondary-opacity: 100;"></i></i></button>
 </div>
 
 <!-- The Create Post form (initially hidden) -->
+<div class="modal-overlay">
+  <div class="create-post-modal">
+    <span class="modal-close">X</span>
 <div class="create-post-form">
 <div class="row" id="new-post">
-  <div class="card mx-auto col-sm-10 col-md-8 col-lg-6 my-5 py-3 text-center shadow-sm">
+  <div class="card mx-auto col-sm-10 col-md-12 col-lg-9 my-5 py-3 text-center shadow-sm">
     <h3 class="create-post-title">Create a new post:</h3>
     <form class="form new-post-form" enctype="multipart/form-data">
       <div class="form-group row justify-content-center">
@@ -27,6 +30,8 @@
       </div>
     </form>
   </div>
+</div>
+</div>
 </div>
 </div>
 

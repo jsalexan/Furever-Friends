@@ -317,20 +317,62 @@ img.one-avatar:not(:hover) {
     text-align: center;
 }
 
+.create-post-text {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+button.create-post-toggle {
+    background-color: var(--background-light);
+    color: var(--pop2);
+}
+
+/* Overlay background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal container */
+  .create-post-modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Close button */
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
 .create-post-bar {
-    background-color: #007bff;
+    background-color: var(--background-light);
     color: #fff;
     padding: 10px;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
   }
   
   .create-post-toggle {
-    background-color: #fff;
-    color: #007bff;
+
     border: none;
-    padding: 5px 10px;
-    font-size: 20px;
+    padding: 2px 2px;
+    font-size: 40px;
     cursor: pointer;
   }
   

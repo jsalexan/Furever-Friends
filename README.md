@@ -95,6 +95,7 @@ Our team is grateful for the assistance from our tutors, as well as several awes
 - https://makeschool.org/mediabook/oa/tutorials/rotten-potatoes---movie-reviews-with-express-js/adding-route-for-comments/<br>
 - https://gist.github.com/amsul/5812749<br>
   <br>
+  <a target="_blank" href="https://icons8.com/icon/24717/add">Add</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 ## [License](#table-of-contents)
 
