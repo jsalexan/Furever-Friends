@@ -50,6 +50,7 @@ Profile.init(
       references: {
         model: "user",
         key: "id",
+        allowNull: false,
       },
     },
   },

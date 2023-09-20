@@ -62,6 +62,7 @@ router.get("/post/:id", (req, res) => {
     ],
   })
     .then((postData) => {
+      
       if (!postData) {
         res.status(404).json({ message: "No post found with this id!" });
         return;
@@ -103,10 +104,7 @@ router.get("/profile", withAuth, async (req, res) => {
 });
 
 router.get("/createac", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
+
   res.render("createac");
 });
 

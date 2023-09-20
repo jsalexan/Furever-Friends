@@ -22,6 +22,16 @@ const loginFormHandler = async (event) => {
     }
   };
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const createAccountButton = document.getElementById("createAccount");
+    if (createAccountButton) {
+        createAccountButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior
+            window.location.href = "./createac"; // Navigate to the create account page
+        });
+    }
+});
+
   document
     .querySelector('#login-form')
     .addEventListener('submit', loginFormHandler);

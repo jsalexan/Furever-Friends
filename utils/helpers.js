@@ -8,5 +8,8 @@ module.exports = {
           return `${word}s`;
         }
         return word;
-    }
+    },
+    json: function(context) {
+        return JSON.stringify(context);
+      }
 };

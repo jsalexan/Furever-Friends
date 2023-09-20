@@ -1,24 +1,31 @@
 const viewProfileHandler = async (event) => {
   event.preventDefault();
 
-  const userData = document.querySelector("#viewProfileCard").value.trim();
+  // Get the user ID from the clicked profile link
+  const userId = event.target.getAttribute('data-user-id');
 
-  if (userData) {
-    const response = await fetch("/profile/:id", {
-        method: 'POST',
-        body: JSON.stringify({userData}),
+  if (userId) {
+    try {
+      const response = await fetch(`/profile/${userId}`, {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
         },
-    });
+      });
 
-    if (response.ok) {
-        document.location.replace('/viewProfile')
-    } else {
-        alert(response.statusText)
+      if (response.ok) {
+        const userData = await response.json();
+
+        // Use userData to display the profile information or redirect to a profile page
+        console.log(userData); // You can update this part to display the user's profile
+      } else {
+        alert('Failed to fetch user profile');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('An error occurred while fetching user profile');
     }
   }
 };
 
-document
-    .querySelector()
+document.querySelector('.viewProfiles').addEventListener('click', viewProfileHandler);
