@@ -23,6 +23,10 @@ body {
     background-color: var(--background-light) !important;
 }
 
+.navbar-brand {
+    padding-bottom: 20px;
+}
+
 span.navbar-toggler-icon {
     color: var(--pop2) !important;
 }
@@ -139,7 +143,10 @@ footer {
     font-size: .625rem;
 }
 
-
+.newPost {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
 .justify-content-center {
     display: flex;
     justify-content: center;
