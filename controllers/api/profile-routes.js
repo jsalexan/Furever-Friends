@@ -3,7 +3,7 @@ const { Profile } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Get the current user's own profile
-router.get('/my-profile', withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     const profile = await Profile.findOne({
       where: {

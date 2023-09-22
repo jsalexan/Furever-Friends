@@ -60,6 +60,12 @@ Profile.init(
     freezeTableName: true,
     underscored: true,
     modelName: "profile",
+    indexes: [
+      {
+        unique: true,
+        fields: ["user_id"], // Add this to create an index on user_id
+      },
+    ],
   }
 );
 
