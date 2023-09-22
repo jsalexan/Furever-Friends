@@ -524,6 +524,7 @@ textarea {
 .text-commentz {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--background-light);
     color: white;
 }
@@ -555,4 +556,10 @@ textarea {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+}
+
+#comment-card-date {
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
 }
