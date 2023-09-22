@@ -116,6 +116,10 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
+router.get("/createac", (req, res) => {
+
+  res.render("createac");
+});
 
 router.get("/profile/:id", async (req, res) => {
   try {
