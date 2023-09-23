@@ -9,7 +9,7 @@
     <span class="modal-close">X</span>
 <div class="create-post-form">
 <div class="row" id="new-post">
-  <div class="card mx-auto col-sm-10 col-md-12 col-lg-9 my-5 py-3 text-center shadow-sm">
+  <div class="card mx-auto col-12 my-2 py-3 text-center shadow-sm">
     <h3 class="create-post-title">Create a new post:</h3>
     <form class="form new-post-form" enctype="multipart/form-data">
       <div class="form-group row justify-content-center">
@@ -20,7 +20,7 @@
          <textarea class="form-input col-8 post-input-title pt-3" rows="6" placeholder="Your message..." id="post-body" style="height: 100px"
           name="body" ></textarea>
       </div>
-      <label class="mt-3 " for="image">Upload a Picture: </label>
+      <label class="mt-3 cloud-txt" for="image">Upload a Picture: </label>
       <div class="form-group mt-3 ml-8" id="uploadbtn">
         
         <input type="file" id="image" name="image" accept="image/*" required>
@@ -47,7 +47,7 @@
           </a>
           <a href="/profile/{{post.user.id}}" id="viewProfile">{{post.user.name}} </a>
         </div>
-        <h2 id="post-title-main">
+        <h2 id="post-title">
           <a href="/post/{{id}}">{{post.title}}</a>
         </h2>
         <button type="button" data-id="{{post.id}}" class="deletebtn">X</button>

@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const createPostBar = document.querySelector(".create-post-bar");
   const modalOverlay = document.querySelector(".modal-overlay");
   const modalClose = document.querySelector(".modal-close");
-  const createPostForm = document.querySelector(".create-post-form"); // Add this line
+  const createPostForm = document.querySelector(".create-post-form"); 
 
   createPostBar.addEventListener("click", function () {
     // Show the modal overlay and form when clicking the "+"

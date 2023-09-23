@@ -4,7 +4,7 @@ module.exports = {
       const originalDate = new Date(date);
             
       // Add one day (24 hours) to the date
-      originalDate.setDate(originalDate.getDate() + 1);
+      // originalDate.setDate(originalDate.getDate() + 1);
 
       const formattedDate = originalDate.toLocaleDateString();
       

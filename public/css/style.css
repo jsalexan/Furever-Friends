@@ -24,7 +24,11 @@ body {
 }
 
 .navbar-brand {
-    padding-bottom: 20px;
+    padding-bottom: 43px;
+}
+
+button.navbar-toggler {
+    color: var(--pop2) !important;
 }
 
 span.navbar-toggler-icon {
@@ -81,11 +85,29 @@ a:hover {
 
  .nav-links:hover {
     color: #F4B664;
-    transition: color 0.3s ease;
+    transition: color, 0.3s ease;
+ }
+
+ #login-btn {
+    background-color: var(--pop2);
+ }
+
+ #login-btn:hover {
+    background-color: var(--accent);
+    color: var(--main-color);
  }
 
 .ct-ac-btn {
     margin-left: 0;
+}
+
+#createAccount {
+    background-color: var(--pop2);
+}
+
+#createAccount:hover {
+    background-color: var(--accent);
+    color: var(--main-color);
 }
 
 #login-card,
@@ -144,8 +166,12 @@ footer {
 }
 
 .newPost {
-    margin-bottom: 20px;
+    margin-top: 10px;
     margin-right: 10px;
+}
+
+.cloud-txt {
+    color: var(--main-color)!important;
 }
 .justify-content-center {
     display: flex;
@@ -158,16 +184,25 @@ footer {
     justify-content: center;
 }
 
-.file-upload-button {
-    background-color: #4CD7D0 !important;
-}
 input#image {
     padding-left: 75px;
 }
 
-input#file-upload-button {
-    background-color: var(--main-color) !important;
-    cursor: pointer;
+.create-btn {
+    background-color: var(--pop2);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    background-color: var(--accent);
+    color: var(--main-color);
+    transition: color 0.3s ease;
+    transition: background-color, 0.3s ease;
+}
+
+.create-btn:active {
+    background-color: var(--pop)!important;
 }
 textarea {
     width: 80%;
@@ -257,6 +292,21 @@ textarea {
 .login-title {
     margin-top: .5rem;
 }
+
+#email-login, #password-login {
+    text-align: center;
+    transition: 0.3s;
+}
+
+#email-login:focus, #password-login:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+#email-login:focus::placeholder, #password-login:focus::placeholder {
+    color: transparent;
+}
+
 
 .img-responsive {
     width: 50%;
@@ -394,8 +444,9 @@ button.create-post-toggle {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 10px;
 }
+
 #post-head h2{
     margin-left: -95px;
 }
@@ -421,7 +472,7 @@ label {
 
 #uploadbtn {
     margin-bottom: 10px;
-}
+ }
 
 #post-title-main {
     display: flex;
@@ -444,12 +495,17 @@ label {
 .input-label {
     min-width:95px; 
 }
+
 .post-input-title {
-    width: 70%;
+    width: 80%;
     height: 50px;
     border-radius: 4px;
     background-color: whitesmoke;
     text-align: start;
+}
+
+.post-input-title:focus::placeholder {
+    color: transparent;
 }
 
 #namerz {
