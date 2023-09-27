@@ -13,7 +13,7 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/createProfile');
       } else {
         alert("Create account unsucessful. \n 1. Password must be length of 9. \n 2. The email has been registered before.");
       }
@@ -24,3 +24,5 @@ const signupFormHandler = async (event) => {
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);
   
+
+    

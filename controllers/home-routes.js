@@ -83,34 +83,19 @@ router.get("/post/:id", (req, res) => {
 
 // get route for profile with auth
 router.get("/profile", withAuth, async (req, res) => {
+  console.log("here");
   try {
-    // Find the logged-in user based on session id
+    // find logged user based on session id
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
       include: [{ model: Profile }],
     });
-
-    if (!userData) {
-      res.status(404).json({ message: "No user found with this id!" });
-      return;
-    }
-
     const user = userData.get({ plain: true });
-
-    if (user.Profile) {
-      // User has a profile, render the existing profile
-      res.render("profile", {  
-        profile: user.Profile,
-        logged_in: true,
-        user_id: req.session.user_id,
-      });
-    } else {
-      // User does not have a profile, render the create profile form
-      res.render("createProfile", {
-        logged_in: true,
-        user_id: req.session.user_id,
-      });
-    }
+    res.render("profile", {
+      ...user,
+      logged_in: true,
+      user_id: req.session.user_id
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -120,7 +105,18 @@ router.get("/createac", (req, res) => {
 
   res.render("createac");
 });
+router.post('/', withAuth, async (req, res) => {
+  try {
+    const newProfile = await Profile.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
 
+    res.status(200).json(newProfile);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 router.get("/profile/:id", async (req, res) => {
   try {
     const profileData = await Profile.findOne(
@@ -149,4 +145,16 @@ router.get("/profile/:id", async (req, res) => {
   }
 });
 
+router.post('/', withAuth, async (req, res) => {
+  try {
+    const newProfile = await Profile.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
+
+    res.status(200).json(newProfile);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 module.exports = router;

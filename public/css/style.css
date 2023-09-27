@@ -376,14 +376,11 @@ img.one-avatar:not(:hover) {
     text-align: center;
 }
 
-.create-post-text {
-    color: var(--main-color);
-    font-size: 25px;
-}
 
 button.create-post-toggle {
     background-color: var(--background-light);
     color: var(--pop2);
+    margin-bottom: 20px;
 }
 
 /* Overlay background */
@@ -421,14 +418,11 @@ button.create-post-toggle {
 
 .create-post-bar {
     background-color: var(--background-light);
-    color: #fff;
-    padding: 10px;
+    padding: 4px;
     text-align: right;
-    cursor: pointer;
   }
   
   .create-post-toggle {
-
     border: none;
     padding: 2px 2px;
     font-size: 40px;

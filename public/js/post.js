@@ -4,7 +4,7 @@
 
     for (const avatar of postAvatars) {
       const userId = avatar.getAttribute('data-user-id');
-      const response = await fetch(`/api/profile/${userId}`);
+      const response = await fetch(`/profile/${userId}`);
  
       if (response.ok) {
         const profileData = await response.json();

@@ -15,9 +15,9 @@ const viewProfileHandler = async (event) => {
 
       if (response.ok) {
         const userData = await response.json();
-
+        console.log(userData);
         // Use userData to display the profile information or redirect to a profile page
-        console.log(userData); // You can update this part to display the user's profile
+         // You can update this part to display the user's profile
       } else {
         alert('Failed to fetch user profile');
       }
