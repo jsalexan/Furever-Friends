@@ -55,7 +55,7 @@ const newFormHandler = async (event) => {
     neighborhood &&
     hobbies
   ) {
-    const response = await fetch("/profile", {
+    const response = await fetch("/api/profile", {
       method: "POST",
       body: JSON.stringify({
         avatar,
@@ -73,7 +73,7 @@ const newFormHandler = async (event) => {
 
     // If profile is successfully created, then redirects to the profile. If there is an error creating the profile, it alerts the users to try again.
 
-    var userid = document.getElementById("profileUserId").getAttribute("userid");
+    var userid = document.getElementById("profileUserId").getAttribute("data-userid");
     if (response.ok) {
       document.location.replace(`/profile/${userid}`);
     } else {

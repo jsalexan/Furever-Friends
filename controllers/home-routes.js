@@ -101,22 +101,28 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
-router.get("/createac", (req, res) => {
-
-  res.render("createac");
-});
-router.post('/', withAuth, async (req, res) => {
+router.post('/createac', withAuth, async (req, res) => {
   try {
     const newProfile = await Profile.create({
       ...req.body,
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newProfile);
+    // Redirect to the createac page, which will render the createProfile page
+    res.redirect('/createac');
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
+router.get("/createac", (req, res) => {
+  res.render("createac");
+});
+
+router.get("/createProfile", (req, res) => {
+  res.render("createProfile");
+});
+
 router.get("/profile/:id", async (req, res) => {
   try {
     const profileData = await Profile.findOne(
@@ -145,16 +151,5 @@ router.get("/profile/:id", async (req, res) => {
   }
 });
 
-router.post('/', withAuth, async (req, res) => {
-  try {
-    const newProfile = await Profile.create({
-      ...req.body,
-      user_id: req.session.user_id,
-    });
 
-    res.status(200).json(newProfile);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
 module.exports = router;

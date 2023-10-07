@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/min-andrew/project-2.git"
+    "url": "git+https://github.com/jsalexan/Furever-Friends"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/min-andrew/project-2/issues"
+    "url": "https://github.com/jsalexan/Furever-Friends/issues"
   },
-  "homepage": "https://github.com/min-andrew/project-2#readme",
+  "homepage": "https://github.com/jsalexan/Furever-Friends#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cloudinary": "^1.32.0",
